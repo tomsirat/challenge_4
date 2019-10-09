@@ -1,0 +1,120 @@
+/* ---------------------------- Paramètres Global ---------------------------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+/* ---------------------------- Header --------------------------------------- */
+
+#title {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    list-style: none;
+    padding: 2rem;
+}
+
+li {
+    margin-right: 1%;
+}
+
+/* ---------------------------- Article --------------------------------------- */
+
+img {
+    max-width: 100%;
+}
+
+#first , .second {
+    display: flex;
+    justify-content: space-between;
+}
+
+.up {
+    width: 33%;
+    margin-right: 2%;
+    padding: 2rem 0; 
+}
+
+.down {
+    width: 24%;
+}
+
+/* ---------------------------- Contact --------------------------------------- */
+
+#contact {
+    display: flex;
+    justify-content: center;
+}
+
+.infos {
+    width: 20%;
+}
+
+#separator {
+    background-color: blue;
+    padding: 0.5rem;
+}
+
+/* ---------------------------- Footer --------------------------------------- */
+
+footer {
+    padding: 4rem;
+}
+
+/* ---------------------------- Media Queries --------------------------------------- */
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) 
+
+{   
+
+    .second {
+        flex-wrap: wrap;
+    }
+
+    .down {
+        width: 49%;
+    }
+
+
+}
+
+header button {
+    display: none;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    nav ul {
+        display: none;
+    }
+
+    header button {
+        display: initial;
+    }
+
+    #title {
+        text-align: left;
+        
+
+    
+    }
+
+    
+
+    
+}
