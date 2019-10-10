@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    font-family: Questrial, sans-serif;
 }
 
 main {
@@ -17,6 +18,7 @@ main {
 #title {
     display: flex;
     flex-direction: column;
+    padding-top: 4rem;
 }
 
 nav ul {
@@ -24,17 +26,28 @@ nav ul {
     align-content: center;
     justify-content: center;
     list-style: none;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 li {
     margin-right: 1%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    color: #2056ac;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px 5px 0 0;
 }
 
 /* ---------------------------- Article --------------------------------------- */
 
 img {
     max-width: 100%;
+    padding: 3rem 0;
 }
 
 #first , .second {
@@ -45,22 +58,41 @@ img {
 .up {
     width: 33%;
     margin-right: 2%;
-    padding: 2rem 0; 
+    padding: 3rem 0; 
+}
+.up a{
+    background-color: #64abd1;
+    padding: 1rem;
+
+}
+main p a{
+    text-decoration: underline;
+    color: blue;
+}
+main p{
+    padding-bottom: 3rem;
 }
 
 .down {
     width: 24%;
+    padding: 3rem;
 }
+.down a{
+    background-color: #64abd1;
+    padding: 1rem;
 
+}
 /* ---------------------------- Contact --------------------------------------- */
 
 #contact {
     display: flex;
     justify-content: center;
+    background-color: #e3f0f7;
 }
 
 .infos {
     width: 20%;
+    padding: 3rem;
 }
 
 #separator {
@@ -76,11 +108,8 @@ footer {
 
 /* ---------------------------- Media Queries --------------------------------------- */
 
-
 @media screen and (min-width: 768px) and (max-width: 1023px) 
-
 {   
-
     .second {
         flex-wrap: wrap;
     }
@@ -88,17 +117,13 @@ footer {
     .down {
         width: 49%;
     }
-
-
 }
 
 header button {
     display: none;
 }
 
-
 @media screen and (max-width: 767px) {
-
     nav ul {
         display: none;
     }
@@ -109,12 +134,25 @@ header button {
 
     #title {
         text-align: left;
-        
-
     
     }
+    .line-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #first, .second, #contact{
+        flex-direction: column;
+        align-items: center; 
+    }
+    .up, .down, .infos{
+        width: 100%;
+    }
+}
+/* ---------------------------- Déco --------------------------------------- */
 
-    
+header, footer{
+    background-color: #2056ac;
+    color: white;
 
-    
 }
