@@ -32,16 +32,23 @@ nav ul {
 li {
     margin-right: 1%;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
 }
+
+nav a {
+    padding: 1rem;
+}
+
 nav a:hover{
     color: #2056ac;
     background-color: #fff;
     padding: 1rem;
     border-radius: 5px 5px 0 0;
 }
+
 
 /* ---------------------------- Article --------------------------------------- */
 
@@ -136,19 +143,23 @@ header button {
         text-align: left;
     
     }
+
     .line-header{
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+
     #first, .second, #contact{
         flex-direction: column;
         align-items: center; 
     }
+
     .up, .down, .infos{
         width: 100%;
     }
 }
+
 /* ---------------------------- Déco --------------------------------------- */
 
 header, footer{
